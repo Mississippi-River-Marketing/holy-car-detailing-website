@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Holy Car Detailing Service</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Holy Car Detailing Service — Interior and Exterior Auto Detailing">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0b0b;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #7c3aed, #22c55e);
+      padding: 30px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 34px;
+    }
+    header p {
+      margin-top: 6px;
+      font-size: 16px;
+      opacity: 0.9;
+    }
+    section {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .hero {
+      text-align: center;
+    }
+    .price {
+      font-size: 36px;
+      font-weight: bold;
+      margin: 15px 0;
+      color: #22c55e;
+    }
+    .price span {
+      display: block;
+      font-size: 14px;
+      color: #ccc;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 28px;
+      background: #7c3aed;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+    }
+    .btn:hover {
+      background: #22c55e;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin: 10px 0;
+    }
+    li::before {
+      content: "✔ ";
+      color: #22c55e;
+    }
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Holy Car Detailing Service</h1>
+  <p>Interior & Exterior Auto Detailing</p>
+</header>
+
+<section class="hero">
+  <h2>Full Interior + Exterior Detail</h2>
+  <div class="price">$99.99 <span>Limited Time Deal</span></div>
+  <a class="btn" href="https://m.me/YOUR_FACEBOOK_PAGE" target="_blank">
+    Message to Book
+  </a>
+</section>
+
+<section>
+  <h2>Our Services</h2>
+  <ul>
+    <li>Interior vacuum and wipe down</li>
+    <li>Dashboard, console, and door panels</li>
+    <li>Exterior wash and rinse</li>
+    <li>Wheel and tire cleaning</li>
+    <li>Wax finish included</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Why Choose Holy Car?</h2>
+  <p>
+    We specialize in removing dirt, salt, and grime to restore your vehicle’s
+    clean, polished look — perfect for winter and daily drivers.
+  </p>
+</section>
+
+<section>
+  <h2>Book Your Detail</h2>
+  <p>
+    Message us with your vehicle, location, and preferred date.
+  </p>
+  <p><strong>Phone:</strong> (573) 000-0000</p>
+</section>
+
+<footer>
+  © <span id="year"></span> Holy Car Detailing Service
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
