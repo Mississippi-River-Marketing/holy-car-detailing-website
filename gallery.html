@@ -2,33 +2,129 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Results | Holy Car Detailing</title>
+  <title>Results | Holy Car Detailing Service</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Before and after auto detailing results from Holy Car Detailing Service in Scott City, Missouri.">
+
   <style>
-    body { margin:0; font-family:Arial,sans-serif; background:#0b0b0b; color:#fff; }
-    header, footer { background:#000; text-align:center; padding:20px; }
-    section { max-width:900px; margin:auto; padding:30px; }
-    .placeholder { background:#111; padding:40px; text-align:center; border:1px dashed #444; }
-    a { color:#7c3aed; text-decoration:none; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0b0b;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #7c3aed, #22c55e);
+      padding: 30px;
+      text-align: center;
+    }
+
+    nav {
+      background: #000;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #7c3aed;
+      margin: 0 14px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 30px;
+    }
+
+    .column h3 {
+      text-align: center;
+      margin-bottom: 15px;
+      color: #22c55e;
+    }
+
+    .column img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+
+    @media (max-width: 768px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    footer {
+      background: #000;
+      padding: 15px;
+      text-align: center;
+      color: #aaa;
+      font-size: 14px;
+    }
   </style>
 </head>
+
 <body>
 
 <header>
   <h1>Before & After Results</h1>
-  <p><a href="index.html">← Back to Home</a></p>
+  <p>Real vehicles. Real results.</p>
 </header>
 
+<nav>
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="gallery.html">Results</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
 <section>
-  <div class="placeholder">
-    <p>Before & After images will go here.</p>
-    <p>(You’ll upload images into an <code>assets</code> folder later)</p>
+  <h2>Detailing Transformations</h2>
+  <p style="text-align:center;">
+    Every vehicle is hand-detailed with care. Here’s what our work looks like.
+  </p>
+
+  <div class="gallery">
+    <div class="column">
+      <h3>Before</h3>
+      <img src="assets/results/before-front.webp" alt="Vehicle before detailing - front view">
+      <img src="assets/results/before-angle.webp" alt="Vehicle before detailing - angle view">
+      <img src="assets/results/before-side.webp" alt="Vehicle before detailing - side view">
+    </div>
+
+    <div class="column">
+      <h3>After</h3>
+      <img src="assets/results/after-front.webp" alt="Vehicle after detailing - front view">
+      <img src="assets/results/after-angle.webp" alt="Vehicle after detailing - angle view">
+      <img src="assets/results/after-side.webp" alt="Vehicle after detailing - side view">
+    </div>
   </div>
 </section>
 
 <footer>
-  © Holy Car Detailing Service
+  © <span id="year"></span> Holy Car Detailing Service
 </footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
